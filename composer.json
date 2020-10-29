@@ -1,0 +1,34 @@
+{
+    "name": "ziming/json-field-for-backpack",
+    "description": "A Json Editor Field for Backpack",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ziming",
+            "email": "ziming.opensource@gmail.com"
+        },
+        {
+            "name": "vesper8"
+        },
+        {
+            "name": "stephanus-stuff"
+        }
+    ],
+    "homepage": "https://github.com/ziming/json-field-for-backpack",
+    "keywords": ["Laravel", "Backpack", "Backpack for Laravel", "Addon", "Admin Panel", "Json", "Field"],
+    "require": {
+        "backpack/crud": "^4.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ziming\\JsonFieldForBackpack\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ziming\\JsonFieldForBackpack\\AddonServiceProvider"
+            ]
+        }
+    }
+}
