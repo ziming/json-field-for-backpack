@@ -48,7 +48,7 @@ If you need to change the field in any way, you can easily publish the file to y
 mkdir -p resources/views/vendor/backpack/crud/fields
 
 # copy the blade file inside the folder we created above
-cp -i vendor/ziming/addon/src/resources/views/fields/json.blade.php resources/views/vendor/backpack/crud/fields/json.blade.php
+cp -i vendor/ziming/json-field-for-backpack/src/resources/views/fields/json.blade.php resources/views/vendor/backpack/crud/fields/json.blade.php
 ```
 
 **Step 2.** Remove the vendor namespace wherever you've used the field:
