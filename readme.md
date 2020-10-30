@@ -1,11 +1,22 @@
-# Json Field for Backpack 4
+# JSON Field for Backpack 4
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-This package provides a ```json``` field type for the [Backpack for Laravel](https://backpackforlaravel.com/) administration panel.
+This package provides a ```json``` field type for the [Backpack for Laravel](https://backpackforlaravel.com/) administration panel. The field allows the admin to manually edit the contents of a column where a JSON is stored, using the [`josdejong/jsoneditor`](https://github.com/josdejong/jsoneditor) JS plugin. That means they'll have:
+- multiple modes of viewing the JSON (code, tree, form)
+- syntax highlighting
+- indented code
+- color picker
+- searching
+- undo & redo
+- etc.
+
+Of course, this field should only be used when the admin is savvy enough to know what JSON is. Otherwise they can completely mess up the structure/format of the JSON stored in the database column.
 
 ## Screenshots
+
+![https://user-images.githubusercontent.com/1032474/97699650-e2e92b80-1a80-11eb-8320-3ac35e8a59a1.gif](https://user-images.githubusercontent.com/1032474/97699650-e2e92b80-1a80-11eb-8320-3ac35e8a59a1.gif)
 
 ## Installation
 
@@ -21,17 +32,20 @@ Inside your custom CrudController:
 
 ```php
 $this->crud->addField([
-     'name'  => 'column_name',
-     'type'  => 'json_editor',
-     'modes' => ['form', 'tree', 'code'], // Optional. 1st item will be the default mode
-     
-    // Optional. default json value in php array style.
-
-    // If there is an actual value in the json column, it will do an 
-    // array_merge_recursive. With the json column values replacing the 
-    // ones with the same keys
-    'default' => [], // Optional. default json value in php array style.
+    'name'  => 'column_name',
+    'type'  => 'json',
     'view_namespace' => 'json-field-for-backpack::fields',
+    
+    // OPTIONAL
+    
+    // Which modes should the JsonEditor JS plugin allow?
+    // Please note that the first mode in the array will be used as the default mode.
+    'modes' => ['form', 'tree', 'code'],
+     
+    // Default value, if needed. If there is an actual value in the json column, 
+    // it will do an array_merge_recursive(), with the json column values 
+    // replacing the ones with the same keys.
+    'default' => [],
 ]);
 ```
 
