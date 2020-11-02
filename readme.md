@@ -89,10 +89,10 @@ If you discover any security related issues, please email [the author](composer.
 
 ## Credits
 
-- [ziming](https://github.com/adoptavia) - Created the initial field type
+- [ziming](https://github.com/ziming) - Created the initial field type
 - [vesper8](https://github.com/vesper8) - Polished & fixed bugs in the field type to allow multiple instances of the field
 - [stephanus-stuff](https://github.com/stephanus-stuff) - For updating the field type to be compatible with Backpack 4.0 and 4.1
-- [Cristian Tabacitu](https://github.com/tabacitu) - For being the creator of Backpack.
+- [Cristian Tabacitu](https://github.com/tabacitu) - For creating Backpack.
 - [josdejong](https://github.com/josdejong) - For creating [jsoneditor](https://github.com/josdejong/jsoneditor)
 
 - [All Contributors][link-contributors]
