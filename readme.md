@@ -1,4 +1,4 @@
-# JSON Field for Backpack 4
+# JSON Field for Backpack 5
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
