@@ -16,6 +16,10 @@
     if (is_array($value) || is_object($value) ) {
         $value = json_encode($value);
     }
+
+    // bug in laravel @json blade directive, it cannot accept an array of more than 3 items directly.
+    // hence the need to declare a variable here 1st then pass to @json later.
+    $defaultModes = ['form', 'tree', 'code', 'preview', 'text'];
 @endphp
 
 @if ($crud->checkIfFieldIsFirstOfItsType($field, $fields))
@@ -55,7 +59,7 @@
                 const hiddenField = document.getElementById('{{ $field['name'] }}');
                 hiddenField.value = window['editor_{{ $field['name'] }}'].getText();
             },
-            modes: @json($field['modes'] ?? ['form', 'tree', 'code']),
+            modes: @json($field['modes'] ?? $defaultModes),
         };
 
         window['editor_{{ $field['name'] }}'] = new JSONEditor(container, options, JSON.parse(jsonString));

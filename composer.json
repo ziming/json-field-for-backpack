@@ -17,6 +17,7 @@
     "homepage": "https://github.com/ziming/json-field-for-backpack",
     "keywords": ["Laravel", "Backpack", "Backpack for Laravel", "Addon", "Admin Panel", "Json", "Field"],
     "require": {
+        "ext-json": "*",
         "backpack/crud": "^4.1.0|^5.0"
     },
     "autoload": {
