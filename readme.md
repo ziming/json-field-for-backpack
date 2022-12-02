@@ -108,6 +108,3 @@ MIT. Please see the [license file](license.md) for more information.
 [link-downloads]: https://packagist.org/packages/ziming/json-field-for-backpack
 [link-author]: https://github.com/ziming
 [link-contributors]: ../../contributors
-
-## I am Hiring
-Hiring for my employer now, if you are interested to work with me, feel free to contact me at the email in composer.json to discuss
