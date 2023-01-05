@@ -2,6 +2,7 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
+[![RINGER](https://www.ringerhq.com/images/get-support-on-ringer.svg)](https://www.ringerhq.com/i/ziming/json-field-for-backpack)
 
 This package provides a ```json``` field type for the [Backpack for Laravel](https://backpackforlaravel.com/) administration panel. The field allows the admin to manually edit the contents of a column where a JSON is stored, using the [`josdejong/jsoneditor`](https://github.com/josdejong/jsoneditor) JS plugin. That means they'll have:
 - multiple modes of viewing the JSON (code, tree, form)
