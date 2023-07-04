@@ -24,11 +24,11 @@
 
 @if ($crud->checkIfFieldIsFirstOfItsType($field, $fields))
     @push('crud_fields_styles')
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.9.2/jsoneditor.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.10.2/jsoneditor.min.css" />
     @endpush
 
     @push('crud_fields_scripts')
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.9.2/jsoneditor.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.10.2/jsoneditor.min.js"></script>
         <script>
             let container, jsonString, options, editor;
         </script>
@@ -65,4 +65,10 @@
         window['editor_{{ $field['name'] }}'] = new JSONEditor(container, options, JSON.parse(jsonString));
         document.getElementById('{{ $field['name'] }}').value = window['editor_{{ $field['name'] }}'].getText();
     </script>
+    <style>
+        div.jsoneditor.jsoneditor-mode-preview pre.jsoneditor-preview, .jsoneditor input {
+            background: #FFF;
+        }
+
+    </style>
 @endpush
