@@ -1,4 +1,4 @@
-# JSON Field for Backpack 5
+# JSON Field for Backpack 5 and 6
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
@@ -18,6 +18,9 @@ Of course, this field should only be used when the admin is savvy enough to know
 ## Screenshots
 
 ![https://user-images.githubusercontent.com/1032474/97699650-e2e92b80-1a80-11eb-8320-3ac35e8a59a1.gif](https://user-images.githubusercontent.com/1032474/97699650-e2e92b80-1a80-11eb-8320-3ac35e8a59a1.gif)
+
+Backpack v6 with Tabler, light and dark modes
+![https://github.com/ziming/json-field-for-backpack/assets/82019078/bdd36562-d46c-4966-ad02-4e765675eae4](https://github.com/ziming/json-field-for-backpack/assets/82019078/bdd36562-d46c-4966-ad02-4e765675eae4)
 
 ## Installation
 
