@@ -24,11 +24,11 @@
 
 @if ($crud->checkIfFieldIsFirstOfItsType($field, $fields))
     @push('crud_fields_styles')
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.1/jsoneditor.min.css" integrity="sha512-8G+Vb2+10BSrSo+wupdzJIylDLpGtEYniQhp0rsbTigPG7Onn2S08Ai/KEGlxN2Ncx9fGqVHtRehMuOjPb9f8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.4.1/jsoneditor.min.css" integrity="sha512-8G+Vb2+10BSrSo+wupdzJIylDLpGtEYniQhp0rsbTigPG7Onn2S08Ai/KEGlxN2Ncx9fGqVHtRehMuOjPb9f8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     @endpush
 
     @push('crud_fields_scripts')
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.1/jsoneditor.min.js" integrity="sha512-ZZTYi+tU/p2AEQSfuloqzXrZZiPkgPrXF1Pcj4OVAm4rsUnUPGme+gga6eAMbzKu+gPa1uciaOVIcxCGIsuLEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.4.1/jsoneditor.min.js" integrity="sha512-CvD46qkRa37Q064RjBPERN64beqlkqGcwzp95OhmGdSgSN2SqfcbwVL5Ybf6omO7i/pT4/+wMmv+aOvRVwn48w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
             let container, jsonString, options, editor;
         </script>
