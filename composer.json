@@ -18,7 +18,7 @@
     "keywords": ["Laravel", "Backpack", "Backpack for Laravel", "Addon", "Admin Panel", "Json", "Field"],
     "require": {
         "ext-json": "*",
-        "backpack/crud": "^4.1.0|^5.0|^6.0"
+        "backpack/crud": "^4.1.0|^5.0|^6.0|^7.0"
     },
     "autoload": {
         "psr-4": {
